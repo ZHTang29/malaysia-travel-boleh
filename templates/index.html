@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Your one stop webpage to get the best deals for your next trip to Malaysia!">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static//css/style.css">
+    <title>MalaysiaTravelBoleh</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    
+    <div>
+        <p class= "header">Malaysia Travel, Made Easy!</p>
+
+        <h1 class="tagline"> Enter your travel details to get a quick rundown on your best options!</h1>
+
+    </div>
+
+    <div class="wrapper">
+        <div id="data1" class="results">
+            <div id="databox0" class="result-col1"></div>
+            <div id="databox1" class="result-col2"></div>
+            <div id="databox2" class="result-col3"></div>
+        </div>
+
+        <div id="data2" class="results2">
+            <div id="databox3" class="result-col4"></div>
+            <div id="databox4" class="result-col5"></div>
+            <div id="databox5" class="result-col6"></div>
+        </div>
+    </div>
+
+    <div class="user-input">
+    
+        <p class="destination">Where are you headed? </p>
+        <select class="destination-choice" id="destination-choice" aria-label="destinations">
+            <option selected>Select your destination here!</option>
+            <option value="Kuala Lumpur">Kuala Lumpur</option>
+            <option value="Melaka">Melaka</option>
+            <option value="Selangor">Selangor</option>
+            <option value="Penang">Penang</option>
+            <option value="Kuching">Kuching</option>
+            <option value="Kota Kinabalu">Kota Kinabalu</option>
+            <option value="Langkawi">Langkawi</option>
+            <option value="Genting Highlands">Genting Highlands</option>
+            <option value="Tai Ping">Tai Ping</option>
+            <option value="Alor Setar">Alor Setar</option>
+            <option value="Seremban">Seremban</option>
+            <option value="Ipoh">Ipoh</option>
+        </select>
+
+        <p class="pax">Number of travellers:</p>
+        <select class="no-pax" id="no-pax" aria-label="Default select example">
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+        <p class="Departure-date"> Departure Date: </p>
+        <input id="dep-date" type="date" value="2022-07-25"
+                min="2022-07-25" max="2022-08-25">
+            
+
+
+        <div class="sortby">
+            <input class="form-check-input" type="radio" value="" id="sort-by-price" name="filtertype">
+            <label class="form-check-label" for="sort-by-price">
+              Show me the cheapest options!
+            </label>
+        </div>
+        <div class="sortby">
+            <input class="form-check-input" type="radio" value="" id="sort-by-duration" name="filtertype">
+            <label class="form-check-label" for="sort-by-duration">
+              Show me the fastest options!
+            </label>
+        </div>
+        <div class="sortby">
+            <input class="form-check-input" type="radio" value="" id="sort-by-all" checked name="filtertype">
+            <label class="form-check-label" for="sort-by-all">
+              Show me all options!
+            </label>
+        </div>
+
+    <input type="submit" value="Take me there!" id="submit" onclick="sendData()">
+    
+    </div>
+
+    <script type='text/javascript' src="../static/sending-data.js"></script>
+
+  </body>
+</html>
